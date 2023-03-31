@@ -14,11 +14,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \DB::table('users')->insert([
+            'name' => 'admin',
+            'email' => 'admin@email.com',
+            'password' => bcrypt('Admin@1234'),
+        ]);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            BookSeeder::class,
+            // PermissionsSeeder::class
+        ]);
+
     }
+
+    
 }

@@ -74,10 +74,52 @@ To read about laravel visit <a src="https://laravel.com" target="_blank" >Larave
 
 ## Prerequist
 PHP >=8.0 
-composer 
 
-# Setup 
 
+# Getting started
+
+## Installation
+
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/9.x/installation)
+
+
+Clone the repository
+
+    git clone https://github.com/JohntyKoli/vuelibraryapi.git
+
+Switch to the repo folder
+
+    cd vuelibraryapi 
+
+Install all the dependencies using composer
+
+    composer install
+
+Copy the example env file and make the required configuration changes in the .env file
+
+    cp .env.example .env
+
+Generate a new application key
+
+    php artisan key:generate
+
+Set the database connection in .env (Make changes accordingly)
+
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=api
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+
+Run the database migrations 
+
+    php artisan migrate
+
+Run the database Seeder (this will imprort dummy data) 
+
+    php artisan db:seed
 
 
 
