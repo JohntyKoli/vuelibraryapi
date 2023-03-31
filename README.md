@@ -69,4 +69,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 ## About Vue Libraray Api
-This is an Api for creating updated and deleated books in the library
+This is an Api for creating updated and deleated books in the library this is completly written in laravel 9.
+To read about laravel visit <a src="https://laravel.com" target="_blank" >Laravel</a>
+
+## Prerequist
+PHP >=8.0 
+composer 
+
+# Setup 
+
+
+
+
