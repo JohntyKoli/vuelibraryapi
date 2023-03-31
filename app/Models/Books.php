@@ -26,7 +26,7 @@ class Books extends Model
                         ->orWhere('title', 'like', '%' . $search . '%')
                         ->orWhere('publisher', 'like', '%' . $search . '%')
                         ->orWhere('isbn', 'like', '%' . $search . '%')
-                        // ->orWhere('published', 'like', '%' . $search . '%')
+                        ->orWhere('published', 'like', '%' . $search . '%')
                         ->orWhere('genre', 'like', '%' . $search . '%');
                 }
             })->paginate($pageCount, ['*'], 'page', $pageNumber);
