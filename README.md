@@ -114,12 +114,24 @@ Set the database connection in .env (Make changes accordingly)
 
 
 Run the database migrations 
+**Make sure you set the correct database connection information before running the migrations** 
 
     php artisan migrate
+**To create fresh Migration** 
+    php artisan migrate:refresh
 
 Run the database Seeder (this will imprort dummy data) 
 
     php artisan db:seed
 
+Start the  server
+    
+    php artisan serve
 
+You can now access the Api at http://127.0.0.1:8000/api/login
+**Incase If port is changed please replace 8000 with repective port Number** 
+
+Now login Using these credentails
+    email: admin@email.com
+    password: Admin@1234
 
